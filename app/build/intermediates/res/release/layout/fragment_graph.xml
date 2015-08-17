@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.steve.solarsafe.Graph">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:id="@+id/graph"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="@string/start_stream"
+        android:textOn="@string/stop_stream"
+        android:textSize="16sp"
+        android:checked="false"
+        android:id="@+id/tbStream"
+        android:layout_below="@+id/graph"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textOff="Lock X axis"
+        android:textOn="Lock X axis"
+        android:textSize="16sp"
+        android:id="@+id/tbLock"
+        android:layout_alignTop="@+id/tbStream"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp" />
+
+    <RelativeLayout
+        android:id="@+id/xyz"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tbStream"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/x"
+            android:layout_marginStart="20dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/y"
+            android:textSize="20sp"
+            android:textIsSelectable="false"
+            android:textAlignment="center"
+            android:text="Y"
+            android:textStyle="bold|italic"
+            android:singleLine="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z"
+            android:id="@+id/z"
+            android:layout_marginEnd="20dp"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:textIsSelectable="false"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+<!-- From: file:/Users/salvatorerivieccio/MEGA/Programs/AndroidStudioProjects/SolarSafe/app/src/main/res/layout/fragment_graph.xml -->

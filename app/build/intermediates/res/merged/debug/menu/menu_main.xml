@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="1"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/action_devices"
+        android:title="@string/action_devices"
+        android:orderInCategory="2"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/action_info"
+        android:title="@string/action_info"
+        android:orderInCategory="3"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/disconnect"
+        android:title="@string/disconnect"
+        android:icon="@drawable/disconnect"
+        android:showAsAction="ifRoom"/>
+</menu>
+<!-- From: file:/D:/draug/Documents/MEGA/Programs/AndroidStudioProjects/SolarSafe/app/src/main/res/menu/menu_main.xml -->
